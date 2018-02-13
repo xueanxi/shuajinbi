@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_light"
+    android:padding="5dp"
+    tools:context="com.anxixue.nongyao.nongyao.MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/tv_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="开关" />
+
+    <Switch
+        android:id="@+id/switch_floatview"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/tv_switch" />
+
+    <ImageButton
+        android:id="@+id/bt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:src="@drawable/ic_close"
+        android:tint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_switch"
+        android:gravity="center_vertical"
+        android:text="load:" />
+
+    <TextView
+        android:id="@+id/et_loading"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/tv_switch"
+        android:layout_toRightOf="@+id/tv_loading"
+        android:minWidth="30dp" />
+
+    <Button
+        android:id="@+id/bt_load_reduce"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_switch"
+        android:layout_toRightOf="@+id/et_play"
+        android:background="@drawable/button_bg"
+        android:text="-1" />
+
+    <Button
+        android:id="@+id/bt_load_plus"
+        android:layout_width="30dp"
+        android:layout_marginStart="3dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_switch"
+        android:layout_toRightOf="@+id/bt_play_reduce"
+        android:background="@drawable/button_bg"
+        android:text="+1" />
+
+    <TextView
+        android:id="@+id/tv_loading_time"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/tv_loading"
+        android:text="Load Time:"
+        android:textColor="@color/red_coral"
+        android:minWidth="30dp" />
+
+    <TextView
+        android:id="@+id/tv_fight"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_loading_time"
+        android:gravity="center_vertical"
+        android:text="play:" />
+
+
+    <TextView
+        android:id="@+id/et_play"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/tv_loading_time"
+        android:layout_toRightOf="@+id/tv_fight"
+        android:minWidth="30dp" />
+
+
+    <Button
+        android:id="@+id/bt_play_reduce"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_loading_time"
+        android:layout_toRightOf="@+id/et_play"
+        android:background="@drawable/button_bg"
+        android:text="-1" />
+
+    <Button
+        android:id="@+id/bt_play_plus"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_loading_time"
+        android:layout_toRightOf="@+id/bt_play_reduce"
+        android:background="@drawable/button_bg"
+        android:text="+1" />
+
+    <TextView
+        android:id="@+id/tv_play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/red_coral"
+        android:layout_below="@+id/bt_play_plus"
+        android:text="Play Time:"
+        android:minWidth="30dp" />
+</RelativeLayout>
